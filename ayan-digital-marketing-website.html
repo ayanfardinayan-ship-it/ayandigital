@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ayan Digital Marketing helps brands grow online with social media, SEO, and digital advertising." />
+  <title>Ayan Digital Marketing | Grow Your Business Online</title>
+  <style>
+    :root{--navy:#0b1224;--ink:#15213b;--muted:#64748b;--blue:#4f7cff;--cyan:#39d6c5;--bg:#f6f8fc;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{background:rgba(11,18,36,.96);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #26314a}
+    nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:20px}
+    .brand{font-weight:800;font-size:1.2rem;letter-spacing:-.5px}.brand span{color:var(--cyan)}
+    .navlinks{display:flex;gap:26px;align-items:center;font-size:.95rem;color:#d6deef}
+    .navlinks a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:12px;font-weight:700;transition:.2s;cursor:pointer;border:0}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),#7858e8);color:white;box-shadow:0 10px 24px #4f7cff35}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px #4f7cff50}
+    .btn-outline{border:1px solid #ffffff50;color:white}
+    .hero{background:radial-gradient(circle at 80% 20%,#253a70 0,transparent 35%),linear-gradient(135deg,#0b1224,#111d3a);color:white;padding:100px 0 90px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.08;letter-spacing:-2px;margin:18px 0}
+    h1 span{background:linear-gradient(90deg,var(--cyan),#8aa9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{color:#c3cee5;max-width:570px;font-size:1.08rem;margin-bottom:28px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .hero-card{background:linear-gradient(145deg,#ffffff18,#ffffff08);border:1px solid #ffffff25;border-radius:24px;padding:28px;backdrop-filter:blur(10px);box-shadow:0 25px 80px #0003}
+    .hero-card h3{font-size:1.2rem;margin-bottom:18px}
+    .metric{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid #ffffff20;color:#d7e0f3}
+    .metric:last-child{border:0}.metric strong{font-size:1.4rem;color:var(--cyan)}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:680px;margin:0 auto 42px}
+    .section-head h2{font-size:clamp(2rem,3vw,2.8rem);letter-spacing:-1px;margin:10px 0}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;border:1px solid #e8edf5;border-radius:18px;padding:28px;box-shadow:0 12px 35px #14213b08}
+    .icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#edf2ff;color:#4f7cff;font-size:1.35rem;margin-bottom:18px}
+    .card h3{margin-bottom:9px}.card p{color:var(--muted);font-size:.96rem}
+    .about{background:white}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .about h2{font-size:2.5rem;line-height:1.15;margin:12px 0 18px;letter-spacing:-1px}
+    .about p{color:var(--muted);margin-bottom:16px}
+    .check{display:flex;gap:10px;margin:12px 0;color:#334155}.check b{color:#18a999}
+    .visual{min-height:330px;border-radius:26px;background:linear-gradient(135deg,#e8efff,#d9fff7);display:grid;place-items:center;padding:30px}
+    .visual-inner{background:#fff;border-radius:20px;padding:25px;width:100%;max-width:350px;box-shadow:0 25px 60px #405b8c20}
+    .bars{display:flex;align-items:end;gap:10px;height:120px;margin:20px 0}
+    .bars i{flex:1;border-radius:8px 8px 2px 2px;background:linear-gradient(#4f7cff,#39d6c5)}
+    .bars i:nth-child(1){height:35%}.bars i:nth-child(2){height:55%}.bars i:nth-child(3){height:43%}.bars i:nth-child(4){height:75%}.bars i:nth-child(5){height:95%}
+    .cta{background:linear-gradient(135deg,#17264b,#0b1224);color:white;text-align:center;border-radius:28px;padding:58px 25px}
+    .cta h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:12px}.cta p{color:#c3cee5;margin:0 auto 25px;max-width:600px}
+    footer{background:#080e1c;color:#aebbd2;padding:28px 0}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .social{display:flex;gap:18px}.social a:hover{color:var(--cyan)}
+    @media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:70px 0}.cards{grid-template-columns:1fr 1fr}.navlinks{gap:13px}.navlinks .hide{display:none}}
+    @media(max-width:560px){.cards{grid-template-columns:1fr}nav{min-height:65px}.navlinks{font-size:.85rem}.navlinks a:nth-child(2){display:none}h1{letter-spacing:-1px}.hero-card{padding:22px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container"><nav>
+    <a class="brand" href="#home">AYAN <span>DIGITAL</span></a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#about">About</a><a class="hide" href="#contact">Contact</a></div>
+    <a class="btn btn-primary" href="#contact">Let's Talk</a>
+  </nav></div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Digital growth partner</div>
+        <h1>Make your brand<br><span>impossible to ignore.</span></h1>
+        <p>Smart digital marketing that helps your business reach the right people, build trust, and grow online.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#contact">Start a Project ↗</a><a class="btn btn-outline" href="#services">Explore Services</a></div>
+      </div>
+      <div class="hero-card">
+        <h3>Your growth, our strategy.</h3>
+        <div class="metric"><span>Social media presence</span><strong>↗</strong></div>
+        <div class="metric"><span>Search visibility</span><strong>↗</strong></div>
+        <div class="metric"><span>Campaign performance</span><strong>↗</strong></div>
+        <p style="color:#aebbd2;font-size:.9rem;margin-top:18px">Creative ideas. Clear strategy. Measurable progress.</p>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">What I do</div><h2>Services built for your growth</h2><p>Practical digital solutions to help you connect with customers and grow your brand.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">◎</div><h3>Social Media Marketing</h3><p>Content planning, page management, and audience engagement for Facebook, Instagram, and more.</p></article>
+        <article class="card"><div class="icon">⌕</div><h3>SEO Optimization</h3><p>Improve your website's search visibility and help customers discover your business.</p></article>
+        <article class="card"><div class="icon">↗</div><h3>Digital Advertising</h3><p>Campaign strategy and ad optimization designed to reach the right audience.</p></article>
+        <article class="card"><div class="icon">✦</div><h3>Content Creation</h3><p>Creative post ideas, captions, and branded content that gets attention.</p></article>
+        <article class="card"><div class="icon">▣</div><h3>Website Support</h3><p>Landing pages and website improvements that make your brand look professional.</p></article>
+        <article class="card"><div class="icon">⌁</div><h3>Brand Strategy</h3><p>A clear online identity and marketing direction to help your business stand out.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div><div class="eyebrow">About Ayan</div><h2>Helping businesses grow in a digital world.</h2><p>Ayan Digital Marketing is focused on helping businesses build a stronger online presence with thoughtful strategy and creative execution.</p>
+        <div class="check"><b>✓</b><span>Personalized strategies for your goals</span></div>
+        <div class="check"><b>✓</b><span>Clear communication and reliable support</span></div>
+        <div class="check"><b>✓</b><span>Creative work with a growth mindset</span></div>
+      </div>
+      <div class="visual"><div class="visual-inner"><b>Growth overview</b><div style="color:#64748b;font-size:.9rem">A sample marketing dashboard</div><div class="bars"><i></i><i></i><i></i><i></i><i></i></div><div style="display:flex;justify-content:space-between;color:#64748b;font-size:.85rem"><span>Reach</span><span>Engagement</span><span>Growth</span></div></div></div>
+    </div>
+  </section>
+  <section id="contact"><div class="container"><div class="cta"><div class="eyebrow">Ready to grow?</div><h2>Let's build something great.</h2><p>Tell me about your business and goals. Let's find the right digital marketing strategy for you.</p>
+    <!-- Replace 8801XXXXXXXXX with your WhatsApp number including country code -->
+    <a class="btn btn-primary" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+  </div></div></section>
+</main>
+<footer><div class="container footer-row"><div>© <span id="year"></span> Ayan Digital Marketing. All rights reserved.</div><div class="social"><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="LinkedIn">LinkedIn</a></div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
